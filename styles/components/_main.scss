@@ -43,11 +43,6 @@ $background-color: #fcfcfc; // Color de fondo
   a {
     color: $primary-color; // Color de los enlaces
     text-decoration: none; // Sin subrayado
-
-    // Estilo para el hover
-    &:hover {
-      text-decoration: underline; // Subrayar en hover
-    }
   }
 }
 

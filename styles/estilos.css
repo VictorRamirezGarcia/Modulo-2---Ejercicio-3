@@ -1,4 +1,45 @@
 @charset "UTF-8";
+.footer {
+  background-color: #fcfcfc;
+  padding: 20px;
+  position: relative;
+  display: inline-block;
+  bottom: 0;
+  width: 100%;
+  height: 120px;
+  color: rgb(33, 5, 245);
+  font-family: "Arial", sans-serif;
+}
+.footer .footer__list {
+  display: flex;
+  justify-content: space-around;
+}
+.footer .footer__item {
+  list-style: none;
+}
+.footer .footer__link {
+  color: rgb(33, 5, 245);
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footer__item {
+    font-size: 1.5rem;
+  }
+  .footer__list {
+    flex-direction: column;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer__item {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .footer__item {
+    font-size: 2rem;
+  }
+}
 .header {
   background-color: #fcfcfc;
   padding: 20px;
@@ -8,24 +49,10 @@
   font-size: 2rem;
   font-family: "Arial", sans-serif;
 }
-.header .nav__list {
-  display: flex;
-  justify-content: space-around;
-}
-.header .nav__item {
-  list-style: none;
-}
-.header .nav__link {
-  color: rgb(33, 5, 245);
-  text-decoration: none;
-}
 
 @media (max-width: 768px) {
   .header__title {
     font-size: 1.5rem;
-  }
-  .nav__list {
-    flex-direction: column;
   }
 }
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -69,60 +96,21 @@
   text-decoration: underline;
 }
 
-@media (max-width: 768px) {
-  .main__section {
-    width: 1.2rem;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .main__section {
-    width: 1.5rem;
-  }
-}
-@media (min-width: 1024px) {
-  .main__section {
-    width: 2rem;
-  }
-}
-.footer {
-  background-color: #fcfcfc;
-  padding: 20px;
-  position: relative;
-  display: inline-block;
-  bottom: 0;
-  width: 100%;
-  height: 120px;
-  color: rgb(33, 5, 245);
-  font-family: "Arial", sans-serif;
-}
-.footer .footer__list {
+.nav .nav__list {
   display: flex;
   justify-content: space-around;
 }
-.footer .footer__item {
+.nav .nav__item {
   list-style: none;
 }
-.footer .footer__link {
+.nav .nav__link {
   color: rgb(33, 5, 245);
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
-  .footer__item {
-    font-size: 1.5rem;
-  }
-  .footer__list {
+  .nav__list {
     flex-direction: column;
-  }
-}
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footer__item {
-    font-size: 1.2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .footer__item {
-    font-size: 2rem;
   }
 }
 /*!
